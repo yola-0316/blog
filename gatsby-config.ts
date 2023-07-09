@@ -1,8 +1,8 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: "My Blog",
+    title: 'My Blog',
     siteUrl: `https://blog.o3o.ooo`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -10,16 +10,17 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
+    'gatsby-plugin-pnpm',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "blog",
+        name: 'blog',
         path: `${__dirname}/blog`,
       },
     },
-    "gatsby-plugin-mdx",
+    'gatsby-plugin-mdx',
   ],
 }
 
